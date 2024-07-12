@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maname&family=Noto+Sans+JP:wght@100..900&family=Playwrite+PE:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maname&family=Noto+Sans+JP:wght@100..900&family=Playwrite+PE:wght@100..400&display=swap');
+
+.navbar {
+    height: 70px;
+    background-color: white;
+  }
+  
+  .navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: white !important;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .content {
+    position: relative;
+    width: 100%;
+    height: 70vh; 
+    overflow: hidden; /* video spans full width */
+  }
+  
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* video covers the entire area */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+  }
+
+  #title {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 40px;
+    font-family: "Maname", serif;
+  }
+  
+  .overlay h1 {
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+  
+  .overlay a {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border: 2px solid black;
+    padding: 10px 40px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease;
+  }
+  
+  .overlay a:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  
+/* Our Story Styling */
+
+.ourStory {
+    background-color: #FEF5EF;
+}
+
+.container2 {
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+  }
+  
+  .image {
+    flex: 0 0 auto; 
+    width: 50%;
+  }
+  
+  .image img {
+    width: 100%; 
+    height: 100%;
+    max-height: 800px; 
+  }
+  
+  .text {
+    flex: 1; 
+  }
+  
+  .heading {
+    margin-top: 20px;
+    text-align: center; 
+    font-family: "Maname", serif;
+    color: #92140C
+  }
+  
+  .line {
+    width: 98%;
+  }
+  
+  .paragraph {
+    text-align: center; 
+    font-family: "Lato", sans-serif;
+    margin-right: 20px;
+    color: #2B303A;
+  }
+  
+
+  /* How it Works Styling */
+
+.howItWorks {
+    background-color: #E4BB97;
+}
+.container3 {
+    display: flex;
+    gap: 10px;
+  }
+
+  .heading2 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Maname", serif;
+    color: #92140C;
+  }
+
+  .line2 {
+    color: black;
+    width: 98%;
+  }
+
+  .text2 {
+    flex: 1;
+    margin: auto;
+    margin-left: 20px;
+    color: #2B303A;
+}
+
+.paragraph2 {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+/* Hours & Location Styling */
+.container3 {
+    display: flex;
+    gap: 30rem;
+    justify-content: center;
+}
+
+.heading3 {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Maname", serif;
+    text-align: center;
+}
+
+.line3 {
+    width: 50%;
+}
+
+/* Hours and Location Styling */
+
+.hoursAndLocation {
+    background-color: #2B303A;
+    color: white;
+}
+
+.container3 {
+    display: flex;
+    gap: 10rem;
+}
+
+.hours {
+    margin-left: 10px;
+}
+
+.line3 {
+    width: 90%;
+}
+
+.location {
+    margin-right: 10px;
+}
+
+.container3 p {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+/* Footer Styling */
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer p, .footer a {
+    text-align: center;
+  }
+  
+  .footer svg {
+    margin-bottom: 1rem;
+  }
+  
+  /* Navbar Styling */
+
+  .navbar-brand {
+    font-family: "Maname", serif;
+  }

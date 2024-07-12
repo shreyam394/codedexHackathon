@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maname&family=Noto+Sans+JP:wght@100..900&family=Playwrite+PE:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maname&family=Noto+Sans+JP:wght@100..900&family=Playwrite+PE:wght@100..400&display=swap');
+
+.navbar {
+    height: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+  .container {
+    text-align: center; 
+    max-width: 800px; 
+    padding: 20px;
+  }
+
+.title-card {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    background: #e8e8e8;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.38);
+    border-radius: 6px;
+    color: black;
+    padding: 10px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    font-family: Arial, sans-serif; 
+    background-position: center;
+  }
+  
+  .title-card::before {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.53) 0%, rgba(0,0,0,0.24) 100%); 
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.53) 0%,rgba(0,0,0,0.24) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.53) 0%,rgba(0,0,0,0.24) 100%);
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(200%);
+    transition: all 500ms ease;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .title-card:hover::before {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+
+  /* Best Picks for Families */
+  .title-card.caption-family1::before {
+    content: "Apples to Apples";
+  }
+  
+  .title-card.caption-family2::before {
+    content: "5 Second Rule";
+  }
+  
+  .title-card.caption-family3::before {
+    content: "Codenames";
+  }
+
+  .title-card.caption-family4::before {
+    content: "King of Tokyo";
+  }
+  
+  .title-card.caption-family5::before {
+    content: "Sequence";
+  }
+  
+  .title-card.caption-family6::before {
+    content: "Monopoly";
+  }
+  
+  .title-card.logo-family1 {
+   background-image: url('https://i.ytimg.com/vi/JzI9vKjnsmY/maxresdefault.jpg');
+   background-size: 180%;
+  }
+  
+  .title-card.logo-family2 {
+   background-image: url('https://m.media-amazon.com/images/I/7189b0IVX8L.jpg');
+   background-size: cover;
+  }
+  
+  .title-card.logo-family3 {
+   background-image: url('https://i.etsystatic.com/20386064/r/il/4ca653/4072943882/il_fullxfull.4072943882_tuqc.jpg');
+   background-size: 200%;
+  }
+  
+  .title-card.logo-family4 {
+   background-image: url('https://i5.walmartimages.com/asr/908638a8-c14b-4149-8a43-e15cd36491ee.2647675219948897898fddb03a4462e9.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF');
+   background-size: 150%;
+  }
+
+  .title-card.logo-family5 {
+    background-image: url('https://m.media-amazon.com/images/I/91Lfk7CDzlL._AC_UF894,1000_QL80_.jpg');
+    background-size: 380%
+   }
+
+   .title-card.logo-family6 {
+    background-image: url('https://www.maziply.com/cdn/shop/files/monopoly-board-game-main.jpg?v=1698936214&width=1600');
+    background-size: cover;
+   }
+
+   /* Best Picks for Couples / 2 People */
+   .title-card.caption-couples1::before {
+    content: "Patchwork";
+  }
+  
+  .title-card.caption-couples2::before {
+    content: "Onitama";
+  }
+  
+  .title-card.caption-couples3::before {
+    content: "7 Wonders: Duel";
+  }
+
+  .title-card.caption-couples4::before {
+    content: "Stratego";
+  }
+  
+  .title-card.caption-couples5::before {
+    content: "Villainous";
+  }
+  
+  .title-card.caption-couples6::before {
+    content: "Memoir 44";
+  }
+  
+  .title-card.logo-couples1 {
+   background-image: url('https://www.shutupandsitdown.com/wp-content/uploads/2016/03/a8d0c9cce70d11e5bb27f23c91709c91_1457648155.jpg');
+   background-size: 180%;
+  }
+  
+  .title-card.logo-couples2 {
+   background-image: url('https://m.media-amazon.com/images/I/61qtclHU66L._AC_UF894,1000_QL80_.jpg');
+   background-size: cover;
+  }
+  
+  .title-card.logo-couples3 {
+   background-image: url('https://131584351.cdn6.editmysite.com/uploads/1/3/1/5/131584351/s691435597172442222_p778_i3_w1600.jpeg');
+   background-size: 150%;
+  }
+  
+  .title-card.logo-couples4 {
+   background-image: url('https://i5.walmartimages.com/asr/37c017a7-f36d-422f-becb-af446fd5b197.025e86ed7f876fb78122d8f67f79053b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF');
+   background-size: 100%;
+  }
+
+  .title-card.logo-couples5 {
+    background-image: url('https://www.ravensburger.us/produktseiten/1024/60001935_2.jpg');
+    background-size: 120%;
+   }
+
+   .title-card.logo-couples6 {
+    background-image: url('https://m.media-amazon.com/images/I/81gpb-VWpJL.jpg');
+    background-size: cover;
+   }
+
+   /* Best Picks for Board Game Hobbyists */
+   .title-card.caption-hobbyists1::before {
+    content: "Arkham Horror LCG";
+  }
+  
+  .title-card.caption-hobbyists2::before {
+    content: "Spirit Island";
+  }
+  
+  .title-card.caption-hobbyists3::before {
+    content: "Stone Age";
+  }
+
+  .title-card.caption-hobbyists4::before {
+    content: "Survive: Escape from Atlantis!";
+  }
+  
+  .title-card.caption-hobbyists5::before {
+    content: "Roll for the Galaxy";
+  }
+  
+  .title-card.caption-hobbyists6::before {
+    content: "Agricola";
+  }
+  
+  .title-card.logo-hobbyists1 {
+   background-image: url('https://detectivehawkgames.com/cdn/shop/products/AHC60_2_1bf20eb5-6861-4484-9b3a-d7fa1873bef8.png?v=1670065163');
+   background-size: 180%;
+  }
+  
+  .title-card.logo-hobbyists2 {
+   background-image: url('https://m.media-amazon.com/images/I/81SU+lWFweL._AC_UF894,1000_QL80_.jpg');
+   background-size: 200%;
+  }
+  
+  .title-card.logo-hobbyists3 {
+   background-image: url('https://assetsio.gnwcdn.com/stone-age-digital-edition-screenshot.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp');
+   background-size: 150%;
+  }
+  
+  .title-card.logo-hobbyists4 {
+   background-image: url('https://media.wired.com/photos/5933398e2a38e4432c4b8bca/master/w_1600%2Cc_limit/Survive-starting.jpg');
+   background-size: 180%;
+  }
+
+  .title-card.logo-hobbyists5 {
+    background-image: url('https://i0.wp.com/s802022855.onlinehome.us/wp-content/uploads/2015/05/Cover-and-Components-500x375.jpg?resize=500%2C375');
+    background-size: 140%;
+   }
+
+   .title-card.logo-hobbyists6 {
+    background-image: url('https://m.media-amazon.com/images/I/81YddT5p6hL._AC_UF894,1000_QL80_.jpg');
+    background-size: cover;
+   }
+
+   .board-games-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .board-games-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .board-games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .board-game-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .board-game-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .last-card {
+    display: block;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+  }
+
+/* Fonts and Colors */
+
+.section-title {
+  font-family: "Maname", serif;
+  color: white;
+}
+
+.board-game-list {
+  font-family: "Lato", sans-serif;
+}
+
+.board-game-card {
+  font-family: "Lato", sans-serif;
+}
+
+.last-card {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+}
+
+.full-width-section {
+  background-image: url('https://img.freepik.com/free-photo/dark-grunge-style-scratched-metal-surface_1048-12951.jpg');
+}

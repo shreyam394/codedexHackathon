@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maname&family=Noto+Sans+JP:wght@100..900&family=Playwrite+PE:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maname&family=Noto+Sans+JP:wght@100..900&family=Playwrite+PE:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maname&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+PE:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maname&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+PE:wght@100..400&display=swap');
+
+.navbar {
+  height: 70px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow boxes to wrap to new line if needed */
+  gap: 20px;
+}
+
+body {
+  font-family: "Sono", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.full-width-section {
+  position: relative; /* Make section position relative for absolute positioning */
+  width: 100%;
+  height: 100%;
+  background-image: url('https://m.media-amazon.com/images/I/81oC5pYhh2L._AC_UF894,1000_QL80_.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0; /* Added padding to move section down */
+  opacity: 0.5;
+}
+
+.full-width-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+}
+
+.heading {
+  position: absolute;
+  top: 30%; /* Position heading vertically in the middle */
+  left: 50%; /* Position heading horizontally in the middle */
+  transform: translate(-50%, -50%); /* Centering trick */
+  color: black;
+  padding: 20px;
+  text-align: center;
+  width: 80%; /* Adjust width as needed */
+  z-index: 6;
+  font-weight: bold;
+}
+
+.container {
+  @media (max-width: 1250px) {
+      flex-direction: column;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.box {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: lightgray;
+  opacity: 1;
+  z-index: 5;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  z-index: 7;
+  color: blue;
+}
+
+.description {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+.link {
+  color: blue;
+  border-radius: 7px;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: rgba(0, 0, 255, 0.3); /* Darker background color on hover */
+}
+
+.custom-hr {
+  margin: 20px auto; /* Center the horizontal line */
+  width: 70%; /* Adjust width as needed */
+  height: 3px;
+  background: black; /* Line color */
+}
+
+/* Fonts and Colors */
+
+.heading {
+  font-family: "Maname", serif;
+  color: #F42272;
+}
+
+.title {
+  font-family: "Nunito Sans", sans-serif;
+  color: #0072BB;
+}
+
+.description {
+  font-family: "Lato", sans-serif;
+  color: #563F1B;
+}
+
+.link {
+  font-family: "Open Sans", sans-serif;
+}
+
+.box {
+  background-color: #E4BB97;
+}
